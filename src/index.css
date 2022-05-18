@@ -5,9 +5,117 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ccc;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  text-align: center; 
+}
+
+.header{
+  text-align: center;
+}
+.header h1{
+  color: #727171;
+}
+
+.header input{
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px solid #8c8c8c;
+  outline: 0;
+  color: #727171;
+}
+
+.add-note{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.add-note textarea{
+ flex: 1 1 1 200px;
+  height: 70px;
+  border: 0;
+  outline: 0;
+  padding:  20px;
+  font-size: 20px;
+  color: #727171;
+  resize:none;
+  border-radius: 5px;
+}
+.text{
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 10px 20px;
+
+}
+.text button{
+  width: 90px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid #727171;
+  cursor: pointer;
+  
+}
+.add-note .colors{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  justify-content:space-between;
+  text-align: center;
+}
+
+
+.circle {
+  display: block;
+  height: 35px;
+  width: 35px;
+  margin: 0 0 0 5px;
+  
+}
+
+
+.notes{
+  flex: 1 1 500px;
+  margin: 0 auto;
+  height: 270px;  
+  background-color: #727171;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.note-item{
+margin: 15px;
+width: 150px;
+height: 90px;
+background-color: white;
+font-size: 16px;
+font-weight: bold;
+border-radius: 10px;
+border: 4px dashed white;
+overflow: auto;
+}
+
+.delete-not{
+  margin-left: 10px;
 }
